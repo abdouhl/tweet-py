@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tweetpy</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+<header class="w-full relative h-64 bg-gradient-to-r from-indigo-400 to-cyan-400">
+
+<div class="absolute inset-0 flex flex-col justify-center items-center">
+ <h1 class="text-center text-white text-3xl lg:text-5xl font-mono font-bold">Tweepy</h1>
+ <p class="text-center text-slate-200 text-xs lg:text-sm">Python package that allows to access the Tweet data without API.</p>
+ <div class="w-fit mt-2 lg:mt-4  flex gap-2">
+ <a class="text-white rounded border-white border p-1 lg:p-2 hover:brightness-75" href="/#docs">Documentation »</a>
+ <a class="text-white rounded border-white border p-1 lg:p-2 hover:brightness-75" href="https://github.com/abdouhl/tweetpy/">Github »</a>
+ </div>
+</div>
+
+</header>
+<section class="px-2 md:px-24 lg:px-36 w-full max-w-7xl mx-auto py-2 md:py-4">
+<h2 class="text-3xl">Installation</h2>
+<p>The easiest way to install the latest version from PyPI is by using pip:</p>
+<pre class="my-2 px-4 py-2 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded  w-full"><code>pip install tweetpy</code></pre>
+<h2 class="text-3xl">Usage</h2>
+<pre class="my-2 px-4 py-2 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded  w-full">
+<code>>>> from tweetpy.tweet import Tweet</code>
+<code>>>> tweet = Tweet(id=1025205344660856838)</code>
+</pre>
+<h2 class="text-3xl" id="doc">Documentation</h2>
+
+
+<div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+    <table class="w-full text-sm text-left text-gray-500 ">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 ">
+            <tr>
+                <th scope="col" class="px-6 py-3">
+                    Attribute
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Description
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Value
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Example
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="bg-white border-b ">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                    <code class="px-2 py-1 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded">text</code>
+                </th>
+                <td class="px-6 py-4">
+                    get tweet text
+                </td>
+                <td class="px-6 py-4">
+                    String
+                </td>
+                <td class="px-6 py-4">
+                    "Welcome to the home"
+                </td>
+            </tr>
+            <tr class="bg-gray-50 border-b ">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                    <code class="px-2 py-1 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded">conversation_count</code>
+                </th>
+                <td class="px-6 py-4">
+                    get comments count
+                </td>
+                <td class="px-6 py-4">
+                    Integer
+                </td>
+                <td class="px-6 py-4">
+                    0
+                </td>
+            </tr>
+            <tr class="bg-white border-b ">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                    <code class="px-2 py-1 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded">lang</code>
+                </th>
+                <td class="px-6 py-4">
+                    get tweet language code
+                </td>
+                <td class="px-6 py-4">
+                    String
+                </td>
+                <td class="px-6 py-4">
+                    "en"
+                </td>
+            </tr>
+            <tr class="bg-gray-50 border-b ">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                    <code class="px-2 py-1 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded">favorite_count</code>
+                </th>
+                <td class="px-6 py-4">
+                    get likes count
+                </td>
+                <td class="px-6 py-4">
+                    Integer
+                </td>
+                <td class="px-6 py-4">
+                    195
+                </td>
+            </tr>
+            <tr class="bg-white border-b ">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                    <code class="px-2 py-1 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded">created_at</code>
+                </th>
+                <td class="px-6 py-4">
+                    get when the tweet created
+                </td>
+                <td class="px-6 py-4">
+                    String
+                </td>
+                <td class="px-6 py-4">
+                    '2018-08-03T02:22:56.000Z'
+                </td>
+            </tr>
+            <tr class="bg-gray-50 border-b ">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                    <code class="px-2 py-1 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded">id</code>
+                </th>
+                <td class="px-6 py-4">
+                    get tweet id
+                </td>
+                <td class="px-6 py-4">
+                    Integer
+                </td>
+                <td class="px-6 py-4">
+                    1025205344660856838
+                </td>
+            </tr>
+            <tr class="bg-white border-b ">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                    <code class="px-2 py-1 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded">id_str</code>
+                </th>
+                <td class="px-6 py-4">
+                    get tweet id as string
+                </td>
+                <td class="px-6 py-4">
+                    String
+                </td>
+                <td class="px-6 py-4">
+                    '1025205344660856838'
+                </td>
+            </tr>
+            <tr class="bg-gray-50 border-b ">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                    <code class="px-2 py-1 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded">possibly_sensitive</code>
+                </th>
+                <td class="px-6 py-4">
+                    is tweet has sensitive content
+                </td>
+                <td class="px-6 py-4">
+                    Boolean
+                </td>
+                <td class="px-6 py-4">
+                    False
+                </td>
+            </tr>
+                        
+        </tbody>
+    </table>
+</div>
+</section>
+<footer class="bg-slate-700 text-slate-100 text-center text-sm p-4">
+  Created by
+  <a class="underline" href="https://www.elhellal.com/">Abderrahmane HELLAL</a>
+  <br>
+</footer>
+</body>
+</html>
