@@ -14,7 +14,7 @@ setup(
 	  'Source': 'https://github.com/abdouhl/tweetpy/',
 	  'Documentation':'https://tweetpy.elhellal.com#doc'
 	},
-	version='1.0.2',
+	version='1.0.4',
 	description='Python package that allows to access the Tweet data without API',
 	long_description_content_type="text/markdown",
 	long_description=long_description,
